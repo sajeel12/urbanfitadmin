@@ -1,0 +1,62 @@
+.homeCarousel2 .splide__pagination {
+    margin-left: 0rem !important;
+    padding-left: 4.2rem !important;
+    width: 100vw !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-end !important;
+    bottom: 8rem !important;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .homeCarousel2 .splide__pagination {
+      padding-left: 0.9rem !important;
+      bottom: 1.25rem !important;
+    }
+    .catalogue_carousel .splide__pagination {
+      margin: auto !important;
+    }
+  }
+  
+  .homeCarousel2 .splide__pagination .is-active {
+    transform: none !important;
+    background: black !important;
+    height: 28px !important;
+    transition: all 0.4s;
+  }
+  
+  /* css for catalogue carousel */
+  .catalogue_carousel .splide__pagination {
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-end !important;
+    transform-origin: center;
+    bottom: 2.5rem !important;
+  }
+
+  .catalogue_carousel .splide__slide{
+    padding: 0 !important;
+  }
+  
+  .catalogue_carousel .splide__pagination .is-active {
+    transform: none !important;
+    background: black !important;
+    height: 28px !important;
+    transition: all 0.4s;
+  }
+
+  .bg_grain{
+    background-image: url(../public/catalogueCarousel\ imgs/grainbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Css for product carousel */
+  #thumbnail-carousel .splide__slide{
+    opacity: 0.7;
+  }
+  #thumbnail-carousel .is-active{
+    opacity: 1;
+    border: none !important;
+  }

@@ -1,0 +1,1254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Futura LT Pro';
+  font-style: normal;
+  font-display: swap;
+  src: url('../public/fonts/FuturaLTPro-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura LT Pro Light';
+  font-style: normal;
+  font-display: swap;
+  src: url('../public/fonts/FuturaLTPro-Light.woff') format('woff');
+} 
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../public/fonts/GothamPro.eot');
+  src: local('Gotham Pro'), local('GothamPro'),
+    url('../public/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/GothamPro.woff2') format('woff2'),
+    url('../public/fonts/GothamPro.woff') format('woff'),
+    url('../public/fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url('../public/fonts/GothamPro-Light.eot');
+  src: local('Gotham Pro Light'), local('GothamPro-Light'),
+    url('../public/fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/GothamPro-Light.woff2') format('woff2'),
+    url('../public/fonts/GothamPro-Light.woff') format('woff'),
+    url('../public/fonts/GothamPro-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Black';
+  src: url('../public/fonts/GothamPro-Black.eot');
+  src: local('Gotham Pro Black'), local('GothamPro-Black'),
+    url('../public/fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/GothamPro-Black.woff2') format('woff2'),
+    url('../public/fonts/GothamPro-Black.woff') format('woff'),
+    url('../public/fonts/GothamPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('../public/fonts/GothamPro-Bold.eot');
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+      url('../public/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/GothamPro-Bold.woff2') format('woff2'),
+      url('../public/fonts/GothamPro-Bold.woff') format('woff'),
+      url('../public/fonts/GothamPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Meduim';
+  src: url('../public/fonts/GothamPro-Medium.eot');
+  src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+      url('../public/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/GothamPro-Medium.woff2') format('woff2'),
+      url('../public/fonts/GothamPro-Medium.woff') format('woff'),
+      url('../public/fonts/GothamPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #383838;
+}
+
+.font_Poppins{
+  font-family:  'Poppins';
+}
+
+.font_futuralt{
+  font-family: 'Futura LT Pro';
+}
+
+.font_gotham {
+  font-family: 'Gotham Pro';
+}
+
+.font_gotham_black {
+  font-family: 'Gotham Pro Black';
+}
+.font_gotham_bold {
+  font-family: 'Gotham Pro Bold';
+}
+
+.font_gotham_medium{
+  font-family: 'Gotham Pro Meduim';
+}
+
+.font_gotham_light {
+  font-family: 'Gotham Pro Light';
+}
+
+.stroke_text {
+  color: transparent;
+  -webkit-text-stroke-color: rgb(39, 39, 42);
+  -webkit-text-stroke-width: 0.6px;
+}
+
+.bg_metal_gold{ /* background for second home carousel */
+  background: linear-gradient(-270deg, rgba(107, 107, 107, 0.2) 0.02%, rgba(179, 144, 62, 0.25) 55.35%);
+}
+
+.bg_btn_gold {
+  background: linear-gradient(92.79deg, #FAE892 0.08%, #B3903E 100.08%);
+}
+
+.bg_404 {
+  background-image: url(../public/404\ Page.png);
+
+}
+
+.gradient_txt {
+  font-style: normal;
+  line-height: 50px;
+  background: linear-gradient(90deg, #FAE892 0.1%, #B3903E 100.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.data_field:has(input:focus) {
+  border-color: rgb(161 98 7);
+}
+
+.marginx_auto {
+  margin: auto;
+}
+
+.card_boxshadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+/*                                    Google icons setup */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.i_size {
+  font-variation-settings:
+    'opsz' 40
+}
+
+.fill {
+  font-variation-settings:
+    'FILL' 1
+}
+
+/* Checkbox CSS here */
+input[type="checkbox"] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  color: #FAE892;
+  border: 1px solid #bdc1c6;
+  /* border-radius: 1px; */
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 2px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked {
+  color: #fff;
+  background: linear-gradient(92.79deg, #FAE892 0.08%, #B3903E 100.08%);
+}
+
+input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked {
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Custom Radio CSS here */
+input[type="radio"] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  color: #FAE892;
+  border: 1px solid #bdc1c6;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 2px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type="radio"]:checked {
+  color: #fff;
+  background: linear-gradient(92.79deg, #FAE892 0.08%, #B3903E 100.08%);
+}
+
+input[type="radio"]:checked::before {
+  opacity: 1;
+}
+
+input[type="radio"]:checked {
+  border: none;
+}
+
+
+/* gradient border css here */
+.border_gradient span {
+  background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+  transition: all .3s;
+  opacity: 0;
+}
+
+.border_gradient:hover span {
+  opacity: 1;
+}
+
+/* Toggle button css */
+.switch {
+  position: relative;
+  display: inline-block;
+  /* width: 46px;
+    height: 25px; */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  width: 40px;
+  height: 22.25px ;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 2px;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+input:checked+.slider {
+  background: linear-gradient(90deg, #FAE892 0%, #B3903E 100%);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*                                   background for newsletter modal */
+.bg_newsletter {
+  background: url(../public/newsletterimg.png) top no-repeat;
+  background-size: cover;
+}
+
+/* css for splide carousel */
+.productCarousel .splide__slide {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.productCarousel .splide__slide.is-active {
+  opacity: 1;
+  border: none !important;
+}
+
+/* hiding element when out of focus */
+.group:not(:focus) .minus_icon {
+  display: none;
+}
+
+/* Toast css */
+.toast {
+  font-family: 'Futura LT Pro' !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .toast {
+    top: 10px !important;
+    left: 10px !important;
+    width: 65% !important;
+    border-radius: 10px !important;
+    height: 100px !important;
+    font-size: smaller !important;
+  }
+}
+
+/* background for gift selection page */
+.bg_giftbanner {
+  background-image: url(../public/giftbanner.png);
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  position: absolute;
+  background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+/*                                     CSS to hide scroll bar */
+
+.account_menu::-webkit-scrollbar {
+  display: none;
+}
+
+/* css for footer */
+footer li{
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#f1{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+height:auto;
+width: 1560px;
+
+
+}
+
+#f2{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 30px 0px 0px;
+gap: 30px;
+width: 1560px;
+
+height: max-content;
+background: #F4F4F4;
+}
+
+#f3{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 0px 20px;
+gap: 20px;
+
+width: 1200px;
+
+}
+#f4{
+  box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 273px;
+
+width: 1200px;
+height: 68px;
+
+border-bottom: 0.5px solid #DADADA;
+}
+#f5{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 0px;
+gap: 30px;
+
+width: 1200px;
+
+
+}
+
+
+#sidebarf2{
+ 
+  background-color: #FFFFFF;
+}
+#sidebarf4{
+  box-sizing: border-box;
+  padding: 30px 30px 40px;
+  border-top: 1px solid #EEEEEE;
+ 
+  background-color: #FFFFFF;
+}
+#sidebarf3f1{
+  background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+  
+ 
+}
+#sidebarf3f1f1f2{
+  padding: 3px 0px 0px;
+}
+#urbanfitlogoU{
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+#dashboardlogo{
+  transform: matrix3d(1,0,0,-1,0,0);
+}
+#menu{
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 500;
+  font-style: normal;
+}
+#submenu{
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  height: 14px;
+}
+#sidebarp{
+ 
+height: 14px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+color: #000000;
+}
+.switch2 {
+  position: relative;
+  display: inline-block;
+}
+
+
+.switch2 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider2 {
+  background: linear-gradient(90deg, #FAE892 0%, #B3903E 100%);
+}
+
+input:checked+.slider2:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+
+
+#searchdiv{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 20px;
+gap: 14px;
+
+width: 275px;
+height: 40px;
+
+background: #FAFAFA;
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 200px;
+box-sizing: border-box;
+}
+#profilename{
+  width: 95px;
+height: 14px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 14px;
+color: #000000;
+}
+#btn-avatar{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+width: 140px;
+height: 34px;
+
+background: linear-gradient(92.79deg, #FAE892 0.08%, #B3903E 100.08%);
+border-radius: 250px;
+}
+#avatar-btn{
+  width: 85px;
+  height: 14px;
+  
+  font-family: 'Futura LT Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+  
+  
+  color: #FFFFFF;
+
+}
+#profiletext{
+  width: 1020px;
+height: 14px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height, or 100% */
+
+
+color: #000000;
+}
+#profilemenu{
+ 
+height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+
+text-align: center;
+
+background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+#profilef1{
+  background: #FFFFFF;
+border: 0.5px solid #DADADA;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+box-sizing: border-box;
+}
+#BI{
+  width: 274px;
+height: 14px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 14px;
+/* identical to box height, or 64% */
+
+
+color: #000000;
+
+}
+#profilelable{
+  height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+
+
+color: #000000;
+}
+#profilelable{
+  height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+
+
+color: #000000;
+}
+#adminfooter{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 19px;
+
+width: 1200px;
+height: 242px;
+position: static;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+#twofactor{
+  width: 243px;
+height: 26px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+
+color: #000000;
+
+}
+#twofactortext{
+  width: 1121px;
+height: 40px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+
+
+
+color: #000000;
+}
+#footertext{
+  width: 1261px;
+height: 40px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+
+text-align: center;
+
+color: #000000;
+
+}
+#twofabg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:10px 30px;
+  gap: 10px;
+  
+  width: 120px;
+  height: 47px;
+  
+  background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+  border-radius: 25px;
+}
+#twofabtn{
+  width: 68px;
+height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+}
+#CS{
+  width: 99px;
+height: 14px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #000000;
+}
+#SB{
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 5px 11px;
+gap: 10px;
+
+width: 74px;
+height: 24px;
+
+background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+border-radius: 5px;
+}
+#statustext{
+  width: 54px;
+height: 14px;
+
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+color: #FFFFFF;
+}
+#changepassword{
+  display: flex;
+  flex-direction: column;
+  align-items: items-start;
+  padding: 40px;
+  gap: 19px;
+  
+  width: 1200px;
+  height: 361px;
+  position: static;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+#updatebtnbox{
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+
+gap: 10px;
+padding:10px 40px;
+width: 130px;
+height: 49px;
+
+background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+border-radius: 25px;
+}
+#updatebtn{
+  width: 55px;
+height: 19px;
+
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+#op{
+ 
+height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+
+text-align: center;
+
+color: #000000;
+
+}
+.inputpassword::placeholder{
+  
+  height: 17px;
+  
+  font-family: 'Futura LT Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  
+  
+  color: rgba(0, 0, 0, 0.3);
+  
+}
+#passwordinfotext{
+ 
+  height: 14px;
+  
+  font-family: 'Futura LT Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  
+  color: #000000;
+}
+#authdiv1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 30px;
+  gap: 20px;
+  
+  width: 590px;
+  height: 358px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  
+}
+#authdiv2{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 19px;
+
+width: 590px;
+height: 242px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#authdiv1text{
+  width: 530px;
+height: 40px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+
+
+
+color: #000000;
+}
+#divauth1heading{
+  
+  height: 26px;
+  
+  font-family: 'Futura LT Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 14px;
+  text-align: center;
+  
+  color: #000000;
+}
+#googlediv{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 0px 0px;
+gap: 20px;
+border: 1px solid #B3903E;
+width: 210px;
+height: 172px;
+
+border-radius: 5px;
+}
+#textmessagediv{
+  box-sizing: border-box;
+
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 0px 0px;
+gap: 20px;
+
+width: 210px;
+height: 172px;
+
+border: 1px solid #F4F4F4;
+border-radius: 5px;
+}
+#textGA{
+  width: 79px;
+height: 44px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+
+
+color: #000000;
+}
+#gtext{
+  height: 48px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* or 133% */
+
+
+color: #000000;
+}
+#reco{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 5px;
+gap: 10px;
+
+width: 74px;
+height: 19px;
+
+background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+
+}
+#recotext{
+  height: 13px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+/* identical to box height, or 130% */
+
+
+color: #FFFFFF;
+}
+#smstext{
+  height: 44px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+
+
+
+color: #000000;
+
+}
+#smstext2{
+  width: 190px;
+height: 32px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* or 133% */
+
+
+color: #000000;
+}
+#authdiv2{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 19px;
+
+width: 590px;
+height: 242px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+#authdiv2mini{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 20px;
+
+width: 590px;
+height: 242px;
+
+background: #FFFFFF;
+border: 1px solid #F4F4F4;
+border-radius: 25px;
+}
+
+#codetext{
+  width: 68px;
+height: 16px;
+
+font-family: 'Urbanist';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+
+color: #000000;
+
+}
+#authdiv2text{
+  width: 510px;
+height: 60px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+color: #000000;
+}
+#securitydiv1{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px;
+gap: 19px;
+
+width: 1200px;
+height: 400px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+#securitydiv2{
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding:10px 30px;
+gap: 10px;
+
+
+height: 49px;
+
+background: linear-gradient(180deg, #FAE892 0%, #B3903E 100%);
+border-radius: 25px;
+}
+#securityupdatebtn{
+  height: 19px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #FFFFFF;
+}
+#GSS{
+  height: 26px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+
+color: #000000;
+}
+#activitiestext{
+  height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+}
+#MN{
+ 
+height: 17px;
+
+font-family: 'Futura LT Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+}

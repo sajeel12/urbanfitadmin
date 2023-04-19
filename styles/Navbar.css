@@ -1,0 +1,67 @@
+.btn3 {
+    width: 30px;
+    height: 10px;
+    position: relative;
+    transition-duration: 0.3s;
+}
+
+.btn3 .icon {
+    transition-duration: 0.3s;
+    position: absolute;
+    height: 0px;
+    width: 30px;
+    background-color: #212121;
+    top: 0;
+}
+
+.btn3 .icon:before {
+    transition-duration: 0.3s;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #212121;
+    content: "";
+    left: 0;
+    top: 0;
+}
+
+.btn3 .icon:after {
+    transition-duration: 0.3s;
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background-color: #212121;
+    content: "";
+    left: 0;
+    top: 8px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu_parent:hover .icon::before {
+        width: 23px;
+    }
+
+    .menu_parent:hover .icon::after {
+        width: 30px;
+    }
+}
+
+.btn3.open .icon {
+    transition-duration: 0.3s;
+}
+
+.btn3.open .icon:before {
+    width: 30px;
+    top: 4px;
+    transform: rotateZ(26deg) translate(2px, -1px);
+}
+
+.btn3.open .icon:after {
+    width: 30px;
+    top: 4px;
+    transform: rotateZ(-26deg) translate(2px, 1px);
+}
+
+.btn3:hover {
+    cursor: pointer;
+}
